@@ -1,10 +1,12 @@
 :root {
   font-family: system-ui, Helvetica, sans-serif;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 400;
 
   color: black;
-  background-color: #ffffff;
+  background-image: linear-gradient(rgba(195, 177, 225, 1), rgba(253,253,150,0.8), rgba(62,180,137,0.5));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
@@ -15,7 +17,3 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}

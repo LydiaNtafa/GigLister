@@ -1,0 +1,85 @@
+.bandName {
+    width: 100%;
+    padding-left: 15%;
+    text-align: start;
+    margin-bottom: 0%;
+    font-family: system-ui, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: purple;
+    text-shadow: 1px 1px 1px black;
+}
+
+.bandLogo {
+    padding-left: 25%;
+    padding-right: 25%;
+    position: center;
+    max-height: 300px;
+    max-width: 500px;
+    height:auto;
+    width: 50%;
+    min-height: 125px;
+    min-width: 250px;
+}
+
+.eventDetails {
+    font-family: "JetBrains Mono",monospace;
+    text-align: right;
+    padding-left: 30%;
+    font-style: italic;
+    text-shadow: 1px 0px 0px rgb(226, 162, 238);
+    position: relative;
+    right: 10%;
+}
+
+.timePlace {
+    padding-left: 10%;
+    width: 30%;
+    min-width: 200px;
+}
+
+.timePlace p {
+    font-family: system-ui, Helvetica, sans-serif;
+    margin: 2%;
+    text-shadow: 1px 1px 0px rgb(224, 236, 138);
+    font-size: 0.8em;
+}
+
+.favBtn {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #63f2dada 0, #967be7a7 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(151, 148, 158, 0.4) 0 2px 4px,rgba(205, 222, 138, 0.606) 0 7px 13px -3px,rgba(151, 181, 34, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #5f0e65;
+    display:flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 40px;
+    justify-content: flex-end;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 12px;
+    padding-right: 12px;
+    position:relative;
+    left: 20%;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 14px;
+}
+
+.favBtn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9261f3 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.favBtn:active {
+    box-shadow: #aa69f4de 0 3px 7px inset;
+    transform: translateY(2px);
+}
