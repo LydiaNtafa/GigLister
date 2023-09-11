@@ -1,10 +1,11 @@
-import { createContext } from "react";
+import { createContext , useState} from "react";
 
 export const EventContext = createContext();
 
 const EventContextProvider = (props) => {
     const O2Arena = "O2 Arena, Peninsula Square, London, SE10 0DX";
     const IslingtonAssembly = "Islington Assembly Hall, Upper Street, Islington, London, N1 2UD"
+    let [favouriteGigs, setFavouriteGigs] = useState([]);
 
     const toolBand = {
         name: "Tool",
@@ -23,7 +24,7 @@ const EventContextProvider = (props) => {
     }
 
     return (
-        <EventContext.Provider value={{ toolBand, painOfSalvation}} >
+        <EventContext.Provider value={{ toolBand, painOfSalvation, favouriteGigs, setFavouriteGigs}} >
             {props.children}
         </EventContext.Provider>
     )

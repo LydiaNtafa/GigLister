@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from "react";
 import "./Gig.css"
+import { useState } from "react"
 
 const Gig = (props) => {
-    let [favourite, setFavourite] = useState(false);
+    let [isFavourite, setIsFavourite] = useState(props.favouriteGigs.includes(props.name));
+    console.log("favourite " + isFavourite)
+    console.log(props.favouriteGigs)
+
     const makeFavourite = () => {
-        if (favourite) {
-            setFavourite(false)
+        if (isFavourite) {
+            props.setFavouriteGigs(props.favouriteGigs.filter(a => a!== props.name))
+            setIsFavourite(false);
         }
         else {
-            setFavourite(true)
+            props.setFavouriteGigs(props.favouriteGigs.concat([props.name]))
+            setIsFavourite(true);
         }
     }
-
-
     return (
         <>
-            <h3 className="bandName"> {favourite ? "🤘" : ""}  {props.name} </h3>
+            <h3 className="bandName"> {isFavourite ? "🤘" : ""}  {props.name} </h3>
             <img className="bandLogo" src={props.logo} alt="band's logo" />
             <p className="eventDetails"> {props.details}</p>
             <div className="timePlace">
@@ -23,7 +26,7 @@ const Gig = (props) => {
                 <p className="eventLocation"> {props.location}</p>
             </div>
             <button className="favBtn" onClick={makeFavourite}>
-                {favourite ? "Remove from favourites" : "Add to favourites"}
+                {isFavourite ? "Remove from favourites" : "Add to favourites"}
             </button>
         </> 
     )
