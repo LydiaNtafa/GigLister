@@ -1,6 +1,7 @@
-# React Application Template
+# Gig Lister, React Web App
+This is a website that displays live music events, as part of a React Learning Project.
 
-This is a simple template for a React application.
+This was build on a template for a React application, provided by [Makers Academy](https://github.com/makersacademy/javascript-react-applications/blob/main/react/01_setting_up_project.md).
 
 This template uses:
 
