@@ -12,12 +12,9 @@ This template uses:
 
 ## Installation
 
-To create a fresh copy of this project, you can use the tool `degit`:
-
-```zsh
-npx degit makersacademy/react-template my-project --mode=git
-
-cd my-project
+Clone this repository.
+Make sure you have npm installed:
+```
 
 npm install
 ```
